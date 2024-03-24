@@ -191,4 +191,6 @@ $(call inherit-product, vendor/pixys/config/rro_overlays.mk)
 # Microsoft
 $(call inherit-product-if-exists, vendor/microsoft/packages.mk)
 
+$(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
