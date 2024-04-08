@@ -50,8 +50,8 @@ PRODUCT_PACKAGES += \
     rsync
 
 # Adblock
-PRODUCT_PACKAGES += \ 
-    hosts.adblock \ 
+PRODUCT_PACKAGES += \
+    hosts.adblock \
     hosts.adblock_symlink \
     hosts.real
 
