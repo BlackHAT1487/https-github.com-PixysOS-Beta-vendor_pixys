@@ -29,6 +29,7 @@ if [ "$1" ]; then
     file_path=$1
     file_dir=$(dirname "$file_path")
     file_name=$(basename "$file_path")
+    md5sum=$(md5sum "$file_path" | cut -d' ' -f1)
 
     if [ -f $file_path ]; then
         # only generate for official and beta builds. unless forced with 'export FORCE_JSON=1'
@@ -48,6 +49,8 @@ if [ "$1" ]; then
                 echo "    {"
                 echo "      \"datetime\": ${datetime},"
                 echo "      \"filename\": \"${file_name}\","
+                echo "      \"url\": \"<url>\","
+                echo "      \"md5\": \"${md5sum}\","
                 echo "      \"payload\": ["
                 echo "        {"
                 echo "          \"offset\": ${offset},"
