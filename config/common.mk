@@ -84,6 +84,13 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
+ifeq ($(PIXYS_ENABLE_TEST_OTA), true)
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.pixys.ota.test_mode=true
+
+endif
+
 # Inherit Pixys audio files
 $(call inherit-product, vendor/pixys/config/pixys_audio.mk)
 
