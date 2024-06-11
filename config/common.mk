@@ -84,6 +84,13 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
+ifeq ($(PIXYS_ENABLE_TEST_OTA), true)
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.pixys.ota.test_mode=true
+
+endif
+
 # Inherit Pixys audio files
 $(call inherit-product, vendor/pixys/config/pixys_audio.mk)
 
@@ -192,6 +199,9 @@ $(call inherit-product, vendor/pixys/config/rro_overlays.mk)
 
 # pixys prebuilts
 $(call inherit-product, vendor/pixys-prebuilts/config.mk)
+
+# Certification
+$(call inherit-product-if-exists, vendor/certification/config.mk)
 
 # Microsoft
 $(call inherit-product-if-exists, vendor/microsoft/packages.mk)
