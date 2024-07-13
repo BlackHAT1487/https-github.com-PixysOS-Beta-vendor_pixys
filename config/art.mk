@@ -8,6 +8,9 @@ ART_BUILD_TARGET_DEBUG := false
 ART_BUILD_HOST_NDEBUG := false
 ART_BUILD_HOST_DEBUG := false
 USE_DEX2OAT_DEBUG := false
+PRODUCT_OTHER_JAVA_DEBUG_INFO := false
+PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
+
 endif
 
 # Dex preopt
@@ -21,7 +24,6 @@ endif
 # but also allow explicit overriding for testing and development.
 SYSTEM_OPTIMIZE_JAVA ?= true
 SYSTEMUI_OPTIMIZE_JAVA ?= true
-FULL_SYSTEM_OPTIMIZE_JAVA ?= true
 
 # Disable debug infos
 ifeq ($(TARGET_BUILD_VARIANT), user)
