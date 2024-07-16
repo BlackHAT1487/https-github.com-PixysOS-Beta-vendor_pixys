@@ -7,5 +7,11 @@
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity</item>
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity</item>
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.reload.ModelReloadService</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.favorites.FavoritesReceiver</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.AddShortcutActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryGarbageCollector</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.InternalBroadcastReceiver</item>
     </string-array>
 </resources>
