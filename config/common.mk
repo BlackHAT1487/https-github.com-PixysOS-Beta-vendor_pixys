@@ -113,18 +113,18 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/pixys/overlay/common
 $(call inherit-product, vendor/pixys/config/rro_overlays.mk)
 
 # pixys prebuilts
-$(call inherit-product, vendor/pixys-prebuilts/config.mk)
+#$(call inherit-product, vendor/pixys-prebuilts/config.mk)
 
 # Certification
-$(call inherit-product-if-exists, vendor/certification/config.mk)
+#$(call inherit-product-if-exists, vendor/certification/config.mk)
 
 # Inherit art options
 include vendor/pixys/config/art.mk
 
 # Pixel Framework
-$(call inherit-product, vendor/pixel-framework/config.mk)
+#$(call inherit-product, vendor/pixel-framework/config.mk)
 
 # Microsoft
-$(call inherit-product-if-exists, vendor/microsoft/packages.mk)
+#$(call inherit-product-if-exists, vendor/microsoft/packages.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
